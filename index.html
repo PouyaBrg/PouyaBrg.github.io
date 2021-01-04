@@ -2,16 +2,15 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> first website </title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="aos.css">
     <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <div id="particles-js"></div>
-    <script type="text/javascript" src="particles.js"></script>
-    <script type="text/javascript" src="app.js"></script>
    <section>
        <header>
            <a href="#"><img src="logo.png" class="logo"></a>
@@ -24,8 +23,8 @@
        <div class="intro-text">
            <p>Hello,</p>
            <p>I'M Pouya</p>
-           <p>I am App Developer <br>& Designer</p>
-           <button><a class="down-cv" href="/home/pouya/https:/pouya/رزومه.pdf">Download CV</a></button>
+           <p>I am App Developer <br><span id="span-1">& Designer</span></p>
+           <button><a class="down-cv" href="PouyaBrg.github.io/folder/رزومه.pdf">Download CV</a></button>
        </div>
        <img src="img1.png" class="first-img">
    </section>
@@ -127,9 +126,16 @@
           <a href="https://instagram.com/pouyaboroughani?igshid=1fy7f2wb9fshu"><i class="fa fa-instagram"></i></a>
           <a href="pouya.79bro@gmail.com"><i class="fa fa-envelope"></i></a>
    </div>
-   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+   <script type="text/javascript" src="particles.js"></script>
+   <script type="text/javascript" src="app.js"></script>
+   <script src="aos.js"></script>
    <script>
-     AOS.init();
+    AOS.init({
+     disable: function() {
+     var maxWidth = 580;
+     return window.innerWidth < maxWidth;
+    }
+    });
    </script>
 </body>
 

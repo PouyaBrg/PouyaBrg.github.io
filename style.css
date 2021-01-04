@@ -481,13 +481,41 @@ footer p:nth-child(2)
         box-shadow: none;
     }
     header ul {
-        position: relative;
         display: none;
     }
     header .logo {
         position: relative;
         max-width: 94px;
         transform: translate(-30px);
+    }
+    .toggle {
+        position: relative;
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+        background: url(https://pouyabrg.github.io//menu.png);
+        background-size: 30px;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .toggle.active{
+        background: url(https://pouyabrg.github.io//close.png);
+        background-size: 30px;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    header ul.navigation.active {
+        position: fixed;
+        top: 0;
+        left: 0;
+        line-height: 31px;
+        width: 38%;
+        display: inline-block;
+        height: 345%;
+        transform: translate(178px , 32px);
+        align-items: center;
+        flex-direction: column;
+        /* background: #ffffff; */
     }
     .intro-text p:nth-child(1) {
         font-weight: bold;
@@ -555,13 +583,13 @@ footer p:nth-child(2)
         width: 100%;
         height: 225px;
         display: flex;
-        background-image: url(https://pouyabrg.github.io//img2.png/img3.jpg);
+        border-radius: unset;
+        margin: 10px auto 0px;
+        background-image: url(https://pouyabrg.github.io//img3.jpg);
         background-repeat: no-repeat;
         background-size: cover;
-        border-radius: unset;
-        margin: 0px auto 20px auto;
         background-color: #f0eeee;
-        box-shadow: 2px 2px 0px rgba(0,0,0,0.2);
+        box-shadow: 2px 2px 12px rgba(0,0,0,0.2);
     }
     .skill-info p {
         direction: rtl;

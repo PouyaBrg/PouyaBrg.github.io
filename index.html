@@ -14,7 +14,8 @@
    <section>
        <header>
            <a href="#"><img src="logo.png" class="logo"></a>
-           <ul>
+           <div class="toggle" onclick="togglemenu();"></div>
+           <ul class="navigation">
                <li><a href="#about" class="text-hover">About</a></li>
                <li><a href="#contact" class="text-hover">Contact</a></li>
                <li><a href="#" class="text-hover">Home</a></li>
@@ -128,6 +129,7 @@
    </div>
    <script type="text/javascript" src="particles.js"></script>
    <script type="text/javascript" src="app.js"></script>
+   <script type="text/javascript">function togglemenu(){var menutoggle = document.querySelector('.toggle'); var navigation = document.querySelector('.navigation'); menutoggle.classList.toggle('active'); navigation.classList.toggle('active')}</script>
    <script src="aos.js"></script>
    <script>
     AOS.init({

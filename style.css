@@ -3,8 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: sans-serif;
-}
+    font-family: sans-serif;}
 #particles-js
 {
     position: fixed;
@@ -23,7 +22,6 @@ section
     position: relative;
     width: 100%;
     min-height: 100vh;
-    padding: 100px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -344,21 +342,23 @@ transform: translate(0px , 20px);
     align-items: center;
     background-color: #3baff7;
 }
-.contact-info p
-{
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+.contact-text p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: #ffffff;
-    font-size: 25px;
+    font-size: 27px;
+    display: initial;
+    justify-content: center;
+    align-items: center;
     border-bottom: 3px solid #ffffff;
 }
-.contact-text button
-{
+.contact-text button {
     width: 130px;
-    height: 42px;
+    position: relative;
+    height: 47px;
     border-radius: 10px;
     font-weight: bold;
     font-size: 14px;
-    transform: translate(320px , 25px);
+    transform: translate(46px , 35px);
     outline: none;
 }
 .contact-btn
@@ -469,20 +469,25 @@ footer p:nth-child(2)
     section {
         position: relative;
         width: 100%;
-        min-height: 100vh;
-        padding: 100px;
+        min-height: 98vh;
         display: flex;
         justify-content: space-between;
         align-items: center;
     }
     header {
         padding: 20px;
+        transform: translate(-20%);
         background: none;
         box-shadow: none;
     }
     header ul {
         position: relative;
         display: none;
+    }
+    header .logo {
+        position: relative;
+        max-width: 94px;
+        transform: translate(-30px);
     }
     .intro-text p:nth-child(1) {
         font-weight: bold;
@@ -504,7 +509,7 @@ footer p:nth-child(2)
         position: absolute;
         left: unset;
         top: unset;
-        transform: translate(-30%, 50%);
+        transform: translate(17%, 75%);
     }
     .intro-text button {
         width: 100px;
@@ -518,29 +523,125 @@ footer p:nth-child(2)
     }
     .first-img {
         position: absolute;
-        width: 360px;
-        height: 340px;
+        width: 350px;
+        height: 320px;
         bottom: 40px;
         border-radius: 40px;
         left: 50%;
-        transform: translate(-45%, -100%);
-
+        transform: translate(-50%, -82%);
     }
+    .about-info {
+        position: relative;
+        width: 100%;
+        height: 225px;
+        display: flex;
+        border-radius: unset;
+        margin: 10px auto 0px;
+        background-image: url(pouyabrg.github.io/img2.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-color: #f0eeee;
+        box-shadow: 2px 2px 12px rgba(0,0,0,0.2);
+    }
+    .seconed-img {
+        width: 50px;
+        height: 50px;
+        display: none;
+        box-shadow: 2px 2px 12px 0px rgba(0,0,0,0.2);
+        border-radius: 20px;
+    }
+    .skill-info {
+        position: relative;
+        width: 100%;
+        height: 225px;
+        display: flex;
+        background-image: url(pouyabrg.github.io/img3.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: unset;
+        margin: 0px auto 20px auto;
+        background-color: #f0eeee;
+        box-shadow: 2px 2px 0px rgba(0,0,0,0.2);
+    }
+    .skill-info p {
+        direction: rtl;
+        transform: translate(-30px , 9px);
+        font-weight: 600;
+        font-size: 16px;
+        color: #424242;
+        border-bottom: 2px solid #424242;
+    }
+    .skill-table tr td {
+        width: 250px;
+        transform: translateY(30px);
+        line-height: unset;
+        font-weight: 100;
+        color: #424242;
+        font-size: 10px;
+    }
+    .third-img {
+        width: 50px;
+        height: 50px;
+        display: none;
+        box-shadow: 2px 0px 12px 2px rgba(0,0,0,0.2);
+        transform: none;
+        border-radius: 20px;
+    }
+    .first-box, .second-box, .third-box {
+        width: 291px;
+        height: 276px;
+        border-radius: 10px;
+        background-color: #f0eeee;
+        box-shadow: 2px 0px 12px 2px rgba(0,0,0,0.3);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 32px;
+        flex-direction: column;
+    }
+    footer p:nth-child(2) {
+        font-size: 25px;
+        color: #161515;
+        font-weight: 400;
+        width: 349px;
+        text-align: center;
+        line-height: 20px;
+    }
+    .social-right-bar {
+        position: fixed;
+        top: 45%;
+        right: 0px;
+        transform: none;
+    }
+    .contact-text button {
+        width: 130px;
+        height: 42px;
+        border-radius: 10px;
+        font-weight: bold;
+        font-size: 14px;
+        transform: translate(20px , 25px);
+        outline: none;
+    }
+    .box-info {
+        width: 65%;
+        height: 600px;
+        display: inline-table;
+        border: 2px solid;
+        transform: translateX(42px);
+        justify-content: center;
+        margin: 50px auto 20px auto;
+    }
+    .contact-info {
+        width: 100%;
+        height: 250px;
+        display: flex;
+        margin-top: 116px;
+        justify-content: center;
+        align-items: center;
+        background-color: #3baff7;
+    }
+
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
